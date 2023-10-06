@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container d-flex align-items-center justify-content-between">
+          <a href="index.html" class="logo"><img src="img/Green Campus logo.png" style="width:150px;"></a>
+        </div>
+      </header>
+      <section id="overall" class="overall">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>CO2 Level Chart</h2>
+            <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+          </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div id="overallStatsSection">
+                  <canvas id="co2Chart"></canvas>
+                </div>
+              </div>
+            <!-- display none of other charts -->
+              <div class="col-md-6" style="display: none;">
+                <canvas id="oxygenChart"></canvas>
+              </div>
+            <div class="row" style="display: none;">
+              <div class="col-md-12">
+                <canvas id="overallStatsChart"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="display: none;">
+            <div class="col-md-12">
+              <div id="overallStatsSection">
+                <canvas id="temperatureChart"></canvas>
+              </div>
+            <div class="col-md-6" style="display: none;">
+              <canvas id="humidityChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container justify-content-center">
+            <table class="table table-bordered border-warning">
+                <thead>
+                  <tr>
+                    <th scope="col">Measures</th>
+                    <th scope="col">Current Value</th>
+                    <th scope="col">Actual Value</th>
+                  </tr>
+                </thead>
+                <tbody class="table-success">
+                  <tr>
+                    <td>Classrooms</td>
+                    <td>100`ppm</td>
+                    <td>50`ppm</td>
+                  </tr>
+                  <tr>
+                    <td>Laboratory</td>
+                    <td>100`ppm</td>
+                    <td>50`ppm</td>
+                  </tr>
+                  <tr>
+                    <td>Surroundings</td>
+                    <td>100`ppm</td>
+                    <td>50`ppm</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="charts.js"></script>
+</body>
+</html>
