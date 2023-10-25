@@ -41,3 +41,14 @@ pass.addEventListener('click',() => {
 })
 
 
+var username = document.forms['form']['username'];
+var password = document.forms['form']['userpass'];
+
+var validate=()=>{
+  if(username==="kgisl" && password==="kgisl@#12345"){
+    alert('valid data');
+  }
+  else{
+    alert('Invalid data');
+  }
+}

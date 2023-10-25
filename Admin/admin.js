@@ -43,7 +43,3 @@ checkboxes.forEach((checkbox) => {
     });
 });
 
-
-
-
-

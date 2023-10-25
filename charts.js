@@ -125,3 +125,4 @@ function calculateAverage(array) {
 }
 
 generateRandomData();
+
